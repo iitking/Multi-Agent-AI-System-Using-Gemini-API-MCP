@@ -6,3 +6,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-02]** chore: configure root .gitignore for Python and Node environments
 - **[2026-08-03]** chore: define core dependencies in requirements.txt
 - **[2026-08-03]** feat(config): implement centralized Settings using pydantic-settings
+- **[2026-08-03]** feat(config): add environment configuration defaults in .env.example
