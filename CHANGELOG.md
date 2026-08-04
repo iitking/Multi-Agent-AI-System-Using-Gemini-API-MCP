@@ -10,3 +10,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-03]** docs: add multi-agent architecture Mermaid diagram to README
 - **[2026-08-03]** feat(db): design database schema for users and tenant isolation
 - **[2026-08-04]** feat(db): add RunRecord and TaskStep models for workflow state persistence
+- **[2026-08-04]** feat(db): add ToolAuditLog schema for immutable tool invocation logging
