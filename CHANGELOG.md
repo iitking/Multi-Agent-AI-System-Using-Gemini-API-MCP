@@ -13,3 +13,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-04]** feat(db): add ToolAuditLog schema for immutable tool invocation logging
 - **[2026-08-04]** feat(db): implement ApprovalRecord model for human-in-the-loop tracking
 - **[2026-08-05]** feat(db): add FinalReport and SystemMetric models for analytics
+- **[2026-08-05]** feat(db): configure async SQLAlchemy engine and session factory
