@@ -15,3 +15,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-05]** feat(db): add FinalReport and SystemMetric models for analytics
 - **[2026-08-05]** feat(db): configure async SQLAlchemy engine and session factory
 - **[2026-08-05]** feat(db): create database migration and table initialization logic
+- **[2026-08-05]** feat(auth): implement PBKDF2-HMAC-SHA256 password hashing with cryptographic salt
