@@ -18,3 +18,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-05]** feat(auth): implement PBKDF2-HMAC-SHA256 password hashing with cryptographic salt
 - **[2026-08-06]** feat(auth): add JWT token creation and validation utilities
 - **[2026-08-06]** feat(auth): implement role-based access control (RBAC) dependencies
+- **[2026-08-06]** feat(db): seed default users for admin, analyst, and viewer roles
