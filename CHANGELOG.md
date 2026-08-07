@@ -20,3 +20,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-06]** feat(auth): implement role-based access control (RBAC) dependencies
 - **[2026-08-06]** feat(db): seed default users for admin, analyst, and viewer roles
 - **[2026-08-07]** feat(db): seed baseline system benchmark metrics
+- **[2026-08-07]** refactor(db): optimize connection pool parameters for SQLite and Postgres
