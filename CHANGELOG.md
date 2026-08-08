@@ -22,3 +22,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-07]** feat(db): seed baseline system benchmark metrics
 - **[2026-08-07]** refactor(db): optimize connection pool parameters for SQLite and Postgres
 - **[2026-08-07]** test(auth): add unit tests for password hashing and verification
+- **[2026-08-08]** test(auth): verify JWT expiration and claims validation
