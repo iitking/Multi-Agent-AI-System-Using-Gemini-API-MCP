@@ -26,3 +26,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-09]** feat(llm): define TokenUsage and LLMResponse dataclasses
 - **[2026-08-10]** feat(llm): add Google Gen AI SDK (google-genai) client wrapper
 - **[2026-08-10]** feat(llm): implement cost calculation based on Gemini 2.5 Flash token rates
+- **[2026-08-10]** feat(llm): support structured JSON output with response schemas
