@@ -24,3 +24,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-07]** test(auth): add unit tests for password hashing and verification
 - **[2026-08-08]** test(auth): verify JWT expiration and claims validation
 - **[2026-08-09]** feat(llm): define TokenUsage and LLMResponse dataclasses
+- **[2026-08-10]** feat(llm): add Google Gen AI SDK (google-genai) client wrapper
