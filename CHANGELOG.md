@@ -30,3 +30,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-10]** feat(llm): add deterministic enterprise fallback engine for offline testing
 - **[2026-08-11]** feat(llm): implement dynamic model configuration via environment variables
 - **[2026-08-11]** test(llm): add unit tests for Gemini client generation
+- **[2026-08-11]** test(llm): verify fallback reasoning output and token accounting
