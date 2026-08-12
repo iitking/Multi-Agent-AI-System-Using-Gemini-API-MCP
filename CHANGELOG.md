@@ -34,3 +34,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-11]** feat(mcp): scaffold Model Context Protocol server abstractions
 - **[2026-08-11]** feat(mcp/data): create in-memory read-only quarterly sales warehouse
 - **[2026-08-12]** feat(mcp/data): add Q1, Q2, and Q3 sales aggregations across product lines
+- **[2026-08-12]** feat(mcp/data): implement regional sales breakdown for NA, EMEA, and APAC
