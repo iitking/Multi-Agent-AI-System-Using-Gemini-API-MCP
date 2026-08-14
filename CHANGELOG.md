@@ -39,3 +39,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-13]** feat(mcp/data): implement calculate_kpis tool for QoQ variance and growth
 - **[2026-08-14]** feat(mcp/data): add percentage change and share of total decline calculations
 - **[2026-08-14]** feat(mcp/data): implement detect_anomalies tool with configurable threshold
+- **[2026-08-14]** feat(mcp/data): implement query_readonly_database with SQL sanitization
