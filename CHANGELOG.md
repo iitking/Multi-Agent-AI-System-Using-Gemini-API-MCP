@@ -37,3 +37,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-12]** feat(mcp/data): implement regional sales breakdown for NA, EMEA, and APAC
 - **[2026-08-13]** feat(mcp/data): implement get_sales_summary tool definition and handler
 - **[2026-08-13]** feat(mcp/data): implement calculate_kpis tool for QoQ variance and growth
+- **[2026-08-14]** feat(mcp/data): add percentage change and share of total decline calculations
