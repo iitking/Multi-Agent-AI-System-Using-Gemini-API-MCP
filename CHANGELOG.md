@@ -40,3 +40,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-14]** feat(mcp/data): add percentage change and share of total decline calculations
 - **[2026-08-14]** feat(mcp/data): implement detect_anomalies tool with configurable threshold
 - **[2026-08-14]** feat(mcp/data): implement query_readonly_database with SQL sanitization
+- **[2026-08-15]** feat(mcp/data): add strict SQL keyword blocklist preventing DDL and DML
