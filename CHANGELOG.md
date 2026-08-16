@@ -42,3 +42,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-14]** feat(mcp/data): implement query_readonly_database with SQL sanitization
 - **[2026-08-15]** feat(mcp/data): add strict SQL keyword blocklist preventing DDL and DML
 - **[2026-08-15]** test(mcp/data): test get_sales_summary across all quarters
+- **[2026-08-16]** test(mcp/data): verify calculate_kpis variance accuracy against Q2-Q3 figures
