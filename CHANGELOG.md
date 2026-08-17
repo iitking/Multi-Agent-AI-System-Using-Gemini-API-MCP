@@ -46,3 +46,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-16]** test(mcp/data): verify detect_anomalies flags DataSync hardware drop
 - **[2026-08-17]** test(mcp/data): test prohibited SQL keyword rejection on read-only queries
 - **[2026-08-17]** feat(mcp/research): scaffold Research MCP Server repository
+- **[2026-08-17]** feat(mcp/research): add corporate memo DOC-2024-EMEA-089 for telecom renewal delays
