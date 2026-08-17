@@ -47,3 +47,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-17]** test(mcp/data): test prohibited SQL keyword rejection on read-only queries
 - **[2026-08-17]** feat(mcp/research): scaffold Research MCP Server repository
 - **[2026-08-17]** feat(mcp/research): add corporate memo DOC-2024-EMEA-089 for telecom renewal delays
+- **[2026-08-17]** feat(mcp/research): add supply notice DOC-2024-SUPPLY-041 for ChipCorp shortage
