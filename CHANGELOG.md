@@ -53,3 +53,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-18]** feat(mcp/research): implement search_company_docs keyword and category search
 - **[2026-08-18]** feat(mcp/research): implement search_approved_sources for external benchmarks
 - **[2026-08-18]** feat(mcp/research): implement get_document_content by document identifier
+- **[2026-08-18]** test(mcp/research): add unit tests for document search and retrieval
