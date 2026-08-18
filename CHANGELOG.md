@@ -48,3 +48,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-17]** feat(mcp/research): scaffold Research MCP Server repository
 - **[2026-08-17]** feat(mcp/research): add corporate memo DOC-2024-EMEA-089 for telecom renewal delays
 - **[2026-08-17]** feat(mcp/research): add supply notice DOC-2024-SUPPLY-041 for ChipCorp shortage
+- **[2026-08-18]** feat(mcp/research): add market intelligence memo MKT-2024-INTEL-112 on pricing
