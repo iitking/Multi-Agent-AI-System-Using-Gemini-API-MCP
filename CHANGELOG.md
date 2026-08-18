@@ -50,3 +50,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-17]** feat(mcp/research): add supply notice DOC-2024-SUPPLY-041 for ChipCorp shortage
 - **[2026-08-18]** feat(mcp/research): add market intelligence memo MKT-2024-INTEL-112 on pricing
 - **[2026-08-18]** feat(mcp/research): add financial preview memo FIN-2024-Q3-PREVIEW
+- **[2026-08-18]** feat(mcp/research): implement search_company_docs keyword and category search
