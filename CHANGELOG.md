@@ -52,3 +52,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-18]** feat(mcp/research): add financial preview memo FIN-2024-Q3-PREVIEW
 - **[2026-08-18]** feat(mcp/research): implement search_company_docs keyword and category search
 - **[2026-08-18]** feat(mcp/research): implement search_approved_sources for external benchmarks
+- **[2026-08-18]** feat(mcp/research): implement get_document_content by document identifier
