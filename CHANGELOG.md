@@ -56,3 +56,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-18]** test(mcp/research): add unit tests for document search and retrieval
 - **[2026-08-19]** test(mcp/research): verify document content lookup by ID
 - **[2026-08-19]** feat(mcp/doc): scaffold Document MCP Server for report persistence
+- **[2026-08-20]** feat(mcp/doc): implement read_document template loader
