@@ -59,3 +59,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-20]** feat(mcp/doc): implement read_document template loader
 - **[2026-08-20]** feat(mcp/doc): implement create_report for markdown section compilation
 - **[2026-08-20]** feat(mcp/doc): implement save_report with unique report ID generation
+- **[2026-08-20]** test(mcp/doc): verify report creation and formatting
