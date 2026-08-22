@@ -63,3 +63,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-21]** feat(mcp/auto): scaffold Automation MCP Server for business actions
 - **[2026-08-21]** feat(mcp/auto): implement send_approved_email requiring approval token
 - **[2026-08-21]** feat(mcp/auto): implement notify_slack tool with channel validation
+- **[2026-08-22]** feat(mcp/auto): implement create_crm_task tool with due date support
