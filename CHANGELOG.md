@@ -68,3 +68,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-22]** feat(mcp/auto): add execution history logging for external actions
 - **[2026-08-23]** test(mcp/auto): verify action rejection when approval token is missing
 - **[2026-08-23]** test(mcp/auto): test successful email dispatch with valid approval token
+- **[2026-08-23]** feat(policy): scaffold enterprise PolicyEngine class
