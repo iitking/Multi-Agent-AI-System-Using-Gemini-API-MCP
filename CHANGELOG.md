@@ -66,3 +66,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-22]** feat(mcp/auto): implement create_crm_task tool with due date support
 - **[2026-08-22]** feat(mcp/auto): add n8n webhook dispatcher integration
 - **[2026-08-22]** feat(mcp/auto): add execution history logging for external actions
+- **[2026-08-23]** test(mcp/auto): verify action rejection when approval token is missing
