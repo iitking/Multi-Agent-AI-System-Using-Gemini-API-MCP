@@ -70,3 +70,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-23]** test(mcp/auto): test successful email dispatch with valid approval token
 - **[2026-08-23]** feat(policy): scaffold enterprise PolicyEngine class
 - **[2026-08-24]** feat(policy): define strict AGENT_TOOL_PERMISSIONS allowlist mapping
+- **[2026-08-24]** feat(policy): enforce RBAC preventing agents from calling unpermitted tools
