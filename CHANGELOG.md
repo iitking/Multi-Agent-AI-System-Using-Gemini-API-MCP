@@ -72,3 +72,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-24]** feat(policy): define strict AGENT_TOOL_PERMISSIONS allowlist mapping
 - **[2026-08-24]** feat(policy): enforce RBAC preventing agents from calling unpermitted tools
 - **[2026-08-24]** feat(policy): define CONSEQUENTIAL_TOOLS requiring human-in-the-loop approval
+- **[2026-08-24]** feat(policy): implement prompt injection detection with regex patterns
