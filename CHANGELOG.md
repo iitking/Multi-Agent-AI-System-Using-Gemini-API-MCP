@@ -78,3 +78,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-25]** test(policy): verify research agent cannot call database tools
 - **[2026-08-25]** test(policy): test prompt injection pattern blocking
 - **[2026-08-25]** feat(mcp): create MCPClientRegistry adapter for centralized tool discovery
+- **[2026-08-25]** feat(mcp): integrate policy engine authorization into tool invocation
