@@ -76,3 +76,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-24]** feat(policy): add validation for SQL and external dispatch arguments
 - **[2026-08-24]** test(policy): verify analytics agent cannot call external email tool
 - **[2026-08-25]** test(policy): verify research agent cannot call database tools
+- **[2026-08-25]** test(policy): test prompt injection pattern blocking
