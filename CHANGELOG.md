@@ -81,3 +81,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-25]** feat(mcp): integrate policy engine authorization into tool invocation
 - **[2026-08-25]** feat(mcp): add latency measurement and structured error handling to MCP client
 - **[2026-08-26]** feat(audit): implement AuditService for recording immutable tool invocations
+- **[2026-08-26]** feat(audit): add token masking for sensitive security parameters in logs
