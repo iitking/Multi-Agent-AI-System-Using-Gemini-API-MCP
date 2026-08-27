@@ -83,3 +83,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-26]** feat(audit): implement AuditService for recording immutable tool invocations
 - **[2026-08-26]** feat(audit): add token masking for sensitive security parameters in logs
 - **[2026-08-26]** feat(audit): support run-scoped audit log querying
+- **[2026-08-27]** feat(metrics): implement MetricsService for operational telemetry
