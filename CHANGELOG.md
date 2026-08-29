@@ -88,3 +88,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-28]** feat(metrics): add cost per run and human approval acceptance tracking
 - **[2026-08-28]** feat(agent/planner): create Supervisor / Planning Agent with Gemini prompt
 - **[2026-08-28]** feat(agent/planner): add task dependency decomposition and tool allowlists
+- **[2026-08-29]** feat(agent/planner): add external action detection in planner directives
