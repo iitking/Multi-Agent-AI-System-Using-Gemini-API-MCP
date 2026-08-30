@@ -92,3 +92,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-29]** test(agent/planner): add unit tests for planner task decomposition
 - **[2026-08-29]** feat(agent/analytics): implement Analytics Agent with Data MCP integration
 - **[2026-08-30]** feat(agent/analytics): add sequential execution for sales summary, KPIs, and anomalies
+- **[2026-08-30]** feat(agent/analytics): record tool invocation audit logs for analytics steps
