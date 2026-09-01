@@ -99,3 +99,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-31]** feat(agent/research): add document search and full content retrieval for key memos
 - **[2026-09-01]** feat(agent/research): format evidence items with confidence scores and timestamps
 - **[2026-09-01]** test(agent/research): test Research Agent evidence extraction
+- **[2026-09-01]** feat(agent/forecaster): implement Forecast & Insight Agent
