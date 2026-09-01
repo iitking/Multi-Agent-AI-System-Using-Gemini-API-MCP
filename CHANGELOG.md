@@ -97,3 +97,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-08-31]** test(agent/analytics): test Analytics Agent end-to-end tool execution
 - **[2026-08-31]** feat(agent/research): implement Research Agent with Research MCP integration
 - **[2026-08-31]** feat(agent/research): add document search and full content retrieval for key memos
+- **[2026-09-01]** feat(agent/research): format evidence items with confidence scores and timestamps
