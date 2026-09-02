@@ -100,3 +100,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-01]** feat(agent/research): format evidence items with confidence scores and timestamps
 - **[2026-09-01]** test(agent/research): test Research Agent evidence extraction
 - **[2026-09-01]** feat(agent/forecaster): implement Forecast & Insight Agent
+- **[2026-09-02]** feat(agent/forecaster): model Base, Bull, and Bear scenarios for Q4
