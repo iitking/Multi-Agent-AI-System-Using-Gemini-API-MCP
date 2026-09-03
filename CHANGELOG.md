@@ -105,3 +105,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-02]** feat(agent/forecaster): separate measured historical facts from forecast assumptions
 - **[2026-09-03]** test(agent/forecaster): verify scenario forecasting bounds and attribution
 - **[2026-09-03]** feat(agent/critic): implement Critic / Quality Assurance Agent
+- **[2026-09-03]** feat(agent/critic): add programmatic Python arithmetic validation for variances
