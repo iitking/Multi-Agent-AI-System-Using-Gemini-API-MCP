@@ -103,3 +103,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-02]** feat(agent/forecaster): model Base, Bull, and Bear scenarios for Q4
 - **[2026-09-02]** feat(agent/forecaster): add quantitative root-cause percentage attribution
 - **[2026-09-02]** feat(agent/forecaster): separate measured historical facts from forecast assumptions
+- **[2026-09-03]** test(agent/forecaster): verify scenario forecasting bounds and attribution
