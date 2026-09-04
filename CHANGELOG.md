@@ -107,3 +107,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-03]** feat(agent/critic): implement Critic / Quality Assurance Agent
 - **[2026-09-03]** feat(agent/critic): add programmatic Python arithmetic validation for variances
 - **[2026-09-04]** feat(agent/critic): add citation grounding check verifying document references
+- **[2026-09-04]** feat(agent/critic): calculate quality assurance score and remediation feedback
