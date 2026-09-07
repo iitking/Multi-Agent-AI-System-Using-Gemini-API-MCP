@@ -113,3 +113,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-06]** feat(agent/reporter): implement Synthesis & Report Agent
 - **[2026-09-06]** feat(agent/reporter): compile formal executive report in Markdown format
 - **[2026-09-07]** feat(agent/reporter): detect external delivery requests and generate approval tokens
+- **[2026-09-07]** feat(agent/reporter): persist finalized reports via Document MCP Server
