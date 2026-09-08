@@ -115,3 +115,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-07]** feat(agent/reporter): detect external delivery requests and generate approval tokens
 - **[2026-09-07]** feat(agent/reporter): persist finalized reports via Document MCP Server
 - **[2026-09-08]** test(agent/reporter): test report generation and approval request formulation
+- **[2026-09-08]** feat(graph): define typed AgentWorkflowState schema
