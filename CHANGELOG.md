@@ -121,3 +121,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-09]** feat(graph): implement planner node and state transition
 - **[2026-09-09]** feat(graph): implement parallel branching for analytics and research nodes
 - **[2026-09-10]** feat(graph): implement forecaster synthesis node merging specialist outputs
+- **[2026-09-10]** feat(graph): implement critic QA node and bounded retry tracking
