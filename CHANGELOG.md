@@ -128,3 +128,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-11]** feat(graph): implement approval gate router and action executor node
 - **[2026-09-11]** feat(graph): implement record rejection node for audit logging
 - **[2026-09-11]** feat(graph): implement persister node and run metrics finalizer
+- **[2026-09-11]** feat(graph): compile complete LangGraph StateGraph with checkpointer
