@@ -125,3 +125,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-10]** feat(graph): implement conditional routing for quality checks and retries
 - **[2026-09-10]** feat(graph): implement escalation node for exhausted retries
 - **[2026-09-10]** feat(graph): implement reporter node and human approval detection
+- **[2026-09-11]** feat(graph): implement approval gate router and action executor node
