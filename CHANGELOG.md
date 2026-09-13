@@ -133,3 +133,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-12]** feat(execution): implement ExecutionService managing background run lifecycles
 - **[2026-09-13]** feat(execution): add asyncio.Queue per run for Server-Sent Events (SSE)
 - **[2026-09-13]** feat(execution): stream real-time node completion events to subscribers
+- **[2026-09-13]** feat(execution): implement resolve_approval resuming graph on human decision
