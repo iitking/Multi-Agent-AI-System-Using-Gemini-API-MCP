@@ -131,3 +131,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-11]** feat(graph): compile complete LangGraph StateGraph with checkpointer
 - **[2026-09-12]** test(graph): test complete LangGraph workflow from start to finish
 - **[2026-09-12]** feat(execution): implement ExecutionService managing background run lifecycles
+- **[2026-09-13]** feat(execution): add asyncio.Queue per run for Server-Sent Events (SSE)
