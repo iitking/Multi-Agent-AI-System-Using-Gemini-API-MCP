@@ -139,3 +139,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-14]** test(integration): test human rejection handling and state recording
 - **[2026-09-14]** feat(api): create FastAPI application with CORS middleware
 - **[2026-09-14]** feat(api): add database initialization to lifespan startup hook
+- **[2026-09-14]** feat(api): implement POST /api/v1/auth/login and GET /api/v1/auth/me
