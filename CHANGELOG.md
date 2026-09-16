@@ -145,3 +145,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-16]** feat(api): implement GET /api/v1/runs/{run_id} returning full state snapshot
 - **[2026-09-16]** feat(api): implement GET /api/v1/runs/{run_id}/stream SSE streaming endpoint
 - **[2026-09-16]** feat(api): implement POST /api/v1/runs/{run_id}/approve approval endpoint
+- **[2026-09-16]** feat(api): implement POST /api/v1/runs/{run_id}/reject rejection endpoint
