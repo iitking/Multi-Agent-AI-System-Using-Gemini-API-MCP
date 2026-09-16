@@ -142,3 +142,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-14]** feat(api): implement POST /api/v1/auth/login and GET /api/v1/auth/me
 - **[2026-09-15]** feat(api): implement POST /api/v1/runs with safety validation
 - **[2026-09-15]** feat(api): implement GET /api/v1/runs listing workflow execution history
+- **[2026-09-16]** feat(api): implement GET /api/v1/runs/{run_id} returning full state snapshot
