@@ -147,3 +147,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-16]** feat(api): implement POST /api/v1/runs/{run_id}/approve approval endpoint
 - **[2026-09-16]** feat(api): implement POST /api/v1/runs/{run_id}/reject rejection endpoint
 - **[2026-09-17]** feat(api): implement GET /api/v1/tools listing MCP servers and permissions
+- **[2026-09-17]** feat(api): implement GET /api/v1/metrics returning system SLA indicators
