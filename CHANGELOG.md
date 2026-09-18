@@ -151,3 +151,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-18]** feat(api): implement GET /api/v1/audit returning immutable audit logs
 - **[2026-09-18]** feat(api): implement POST /api/v1/n8n/webhook callback endpoint
 - **[2026-09-18]** feat(api): add GET / root endpoint with service metadata and links
+- **[2026-09-18]** feat(api): add GET /health check endpoint with MCP server status
