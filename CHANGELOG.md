@@ -149,3 +149,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-17]** feat(api): implement GET /api/v1/tools listing MCP servers and permissions
 - **[2026-09-17]** feat(api): implement GET /api/v1/metrics returning system SLA indicators
 - **[2026-09-18]** feat(api): implement GET /api/v1/audit returning immutable audit logs
+- **[2026-09-18]** feat(api): implement POST /api/v1/n8n/webhook callback endpoint
