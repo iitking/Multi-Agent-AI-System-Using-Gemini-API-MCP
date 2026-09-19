@@ -153,3 +153,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-18]** feat(api): add GET / root endpoint with service metadata and links
 - **[2026-09-18]** feat(api): add GET /health check endpoint with MCP server status
 - **[2026-09-19]** test(security): test unauthorized tool invocation rejection across agents
+- **[2026-09-19]** test(security): test prohibited SQL keyword rejection on read-only queries
