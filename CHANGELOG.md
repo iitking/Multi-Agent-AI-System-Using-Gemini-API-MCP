@@ -155,3 +155,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-19]** test(security): test unauthorized tool invocation rejection across agents
 - **[2026-09-19]** test(security): test prohibited SQL keyword rejection on read-only queries
 - **[2026-09-20]** test(security): test prompt injection sanitization against known attack vectors
+- **[2026-09-20]** feat(eval): define BENCHMARK_EVAL_DATASET with revenue drop ground truth
