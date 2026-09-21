@@ -157,3 +157,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-20]** test(security): test prompt injection sanitization against known attack vectors
 - **[2026-09-20]** feat(eval): define BENCHMARK_EVAL_DATASET with revenue drop ground truth
 - **[2026-09-21]** feat(eval): implement single-agent monolithic prompt baseline evaluator
+- **[2026-09-21]** feat(eval): implement multi-agent system benchmark evaluator
