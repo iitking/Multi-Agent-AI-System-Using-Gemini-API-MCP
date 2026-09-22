@@ -1,0 +1,41 @@
+{
+  "name": "Quality Review Incident Escalation",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "incident-escalation",
+        "options": {}
+      },
+      "id": "node-incident-webhook",
+      "name": "Incident Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "channel": "#ai-ops-incidents",
+        "text": "=*:warning: Quality Gate Escalation Alert*\n*Run ID:* {{ $json.body.run_id }}\n*Reason:* Bounded retries exhausted without meeting critic confidence threshold.\n*Action:* Manual analyst intervention required."
+      },
+      "id": "node-incident-slack",
+      "name": "Alert Ops Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Incident Webhook": {
+      "main": [
+        [
+          {
+            "node": "Alert Ops Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
