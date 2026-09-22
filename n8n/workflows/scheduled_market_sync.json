@@ -1,0 +1,48 @@
+{
+  "name": "Scheduled Market & Financial Data Sync",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "node-schedule-cron",
+      "name": "Daily Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://backend:8000/api/v1/n8n/webhook",
+        "method": "POST",
+        "jsonParameters": true,
+        "options": {}
+      },
+      "id": "node-http-request",
+      "name": "Notify Multi-Agent System",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Daily Schedule": {
+      "main": [
+        [
+          {
+            "node": "Notify Multi-Agent System",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
