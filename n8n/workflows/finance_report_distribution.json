@@ -1,0 +1,114 @@
+{
+  "name": "Finance Report Automated Distribution Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "finance-approval",
+        "options": {}
+      },
+      "id": "node-webhook-1",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const payload = $json.body || $json;\nreturn [{\n  json: {\n    event: payload.event || 'report_dispatched',\n    recipient: payload.to || 'finance-leadership@apexcloud.io',\n    subject: payload.subject || 'Audited Q3 Financial Intelligence Report',\n    summary: payload.body || 'Approved report delivery',\n    approved_at: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "node-transform-2",
+      "name": "Transform Payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "channel": "#finance-leadership",
+        "text": "=*:white_check_mark: Approved Executive Financial Report Dispatched*\n*Subject:* {{ $json.subject }}\n*Delivered to:* {{ $json.recipient }}\n*Timestamp:* {{ $json.approved_at }}"
+      },
+      "id": "node-slack-3",
+      "name": "Slack Notification",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [680, 200]
+    },
+    {
+      "parameters": {
+        "toEmail": "={{ $json.recipient }}",
+        "subject": "={{ $json.subject }}",
+        "text": "=Dear Finance Committee,\n\nPlease find attached the audited quarterly intelligence report approved via the Human Approval Gate.\n\nSummary:\n{{ $json.summary }}\n\nRegards,\nEnterprise Multi-Agent System"
+      },
+      "id": "node-email-4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [680, 400]
+    },
+    {
+      "parameters": {
+        "options": {
+          "responseCode": 200
+        },
+        "responseBody": "{\n  \"status\": \"DISPATCHED\",\n  \"delivery_network\": \"n8n_enterprise_bus\"\n}"
+      },
+      "id": "node-response-5",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [900, 300]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Transform Payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Payload": {
+      "main": [
+        [
+          {
+            "node": "Slack Notification",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Slack Notification": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

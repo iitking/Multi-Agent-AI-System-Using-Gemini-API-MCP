@@ -160,3 +160,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-21]** feat(eval): implement multi-agent system benchmark evaluator
 - **[2026-09-21]** feat(eval): calculate calculation accuracy, citation recall, and approval gating
 - **[2026-09-21]** test(eval): test benchmark comparison verifying multi-agent superiority
+- **[2026-09-22]** feat(n8n): add finance report distribution workflow in n8n/workflows
