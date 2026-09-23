@@ -166,3 +166,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-23]** feat(frontend): initialize Next.js 14 project structure and dependencies
 - **[2026-09-23]** feat(frontend): configure TypeScript, PostCSS, and Tailwind CSS themes
 - **[2026-09-23]** feat(frontend): define TypeScript interfaces in frontend/lib/types.ts
+- **[2026-09-23]** feat(frontend): implement API client in frontend/lib/api.ts
