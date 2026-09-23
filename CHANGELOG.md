@@ -168,3 +168,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-23]** feat(frontend): define TypeScript interfaces in frontend/lib/types.ts
 - **[2026-09-23]** feat(frontend): implement API client in frontend/lib/api.ts
 - **[2026-09-23]** feat(frontend): create Navbar component with role indicators
+- **[2026-09-23]** feat(frontend): create MetricsOverview component with 6 KPI cards
