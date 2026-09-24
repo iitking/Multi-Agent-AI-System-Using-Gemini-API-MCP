@@ -170,3 +170,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-23]** feat(frontend): create Navbar component with role indicators
 - **[2026-09-23]** feat(frontend): create MetricsOverview component with 6 KPI cards
 - **[2026-09-24]** feat(frontend): create WorkflowGraph component with animated pipeline states
+- **[2026-09-24]** feat(frontend): create ChatInterface with 1-click preset business directives
