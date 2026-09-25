@@ -172,3 +172,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-24]** feat(frontend): create WorkflowGraph component with animated pipeline states
 - **[2026-09-24]** feat(frontend): create ChatInterface with 1-click preset business directives
 - **[2026-09-25]** feat(frontend): create ApprovalGateModal for reviewing and authorizing actions
+- **[2026-09-25]** feat(frontend): create ReportViewer with markdown rendering and clipboard export
