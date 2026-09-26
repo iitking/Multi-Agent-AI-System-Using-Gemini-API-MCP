@@ -174,3 +174,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-25]** feat(frontend): create ApprovalGateModal for reviewing and authorizing actions
 - **[2026-09-25]** feat(frontend): create ReportViewer with markdown rendering and clipboard export
 - **[2026-09-26]** feat(frontend): create RunHistory component with token and cost audit table
+- **[2026-09-26]** feat(frontend): create ToolsCatalog displaying MCP servers and RBAC matrix
