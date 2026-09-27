@@ -176,3 +176,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-26]** feat(frontend): create RunHistory component with token and cost audit table
 - **[2026-09-26]** feat(frontend): create ToolsCatalog displaying MCP servers and RBAC matrix
 - **[2026-09-27]** feat(frontend): build main dashboard in frontend/app/page.tsx with SSE streaming
+- **[2026-09-27]** feat(frontend): configure root layout and global styles
