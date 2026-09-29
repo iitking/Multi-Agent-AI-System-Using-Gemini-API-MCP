@@ -179,3 +179,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-27]** feat(frontend): configure root layout and global styles
 - **[2026-09-28]** feat(infra): create Dockerfile for FastAPI backend container
 - **[2026-09-28]** feat(infra): create multi-stage Dockerfile for Next.js frontend container
+- **[2026-09-29]** feat(infra): create docker-compose.yml with backend, frontend, postgres, redis, and n8n
