@@ -181,3 +181,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-28]** feat(infra): create multi-stage Dockerfile for Next.js frontend container
 - **[2026-09-29]** feat(infra): create docker-compose.yml with backend, frontend, postgres, redis, and n8n
 - **[2026-09-29]** feat(infra): create deployment shell script infra/deployment/deploy.sh
+- **[2026-09-29]** feat(infra): create Kubernetes manifests in infra/deployment/k8s-manifests.yaml

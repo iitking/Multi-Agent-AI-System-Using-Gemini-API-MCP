@@ -1,0 +1,89 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-agent-backend
+  labels:
+    app: multi-agent-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: multi-agent-backend
+  template:
+    metadata:
+      labels:
+        app: multi-agent-backend
+    spec:
+      containers:
+      - name: backend
+        image: apexcloud/enterprise-multi-agent-backend:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: multi-agent-secrets
+        - configMapRef:
+            name: multi-agent-config
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: multi-agent-backend-svc
+spec:
+  selector:
+    app: multi-agent-backend
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-agent-frontend
+  labels:
+    app: multi-agent-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: multi-agent-frontend
+  template:
+    metadata:
+      labels:
+        app: multi-agent-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: apexcloud/enterprise-multi-agent-frontend:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NEXT_PUBLIC_API_URL
+          value: "http://multi-agent-backend-svc:8000/api/v1"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: multi-agent-frontend-svc
+spec:
+  selector:
+    app: multi-agent-frontend
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+  type: LoadBalancer
