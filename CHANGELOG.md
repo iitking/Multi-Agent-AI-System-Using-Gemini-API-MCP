@@ -183,3 +183,4 @@ All notable development milestones and architectural changes recorded below.
 - **[2026-09-29]** feat(infra): create deployment shell script infra/deployment/deploy.sh
 - **[2026-09-29]** feat(infra): create Kubernetes manifests in infra/deployment/k8s-manifests.yaml
 - **[2026-09-29]** feat(cli): create interactive terminal demo runner in demo.py with Rich formatting
+- **[2026-09-30]** feat(scripts): add local quickstart launcher start.sh
