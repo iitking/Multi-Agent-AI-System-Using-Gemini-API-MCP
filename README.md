@@ -4,15 +4,10 @@ An advanced, enterprise-oriented AI operations and intelligence platform built w
 
 The system accepts complex business requests, decomposes them into tasks, coordinates specialized agents, retrieves authorized data through MCP tools, validates evidence, generates reports, and routes consequential actions through human approval.
 
-> **Project status:** This README describes the proposed architecture and implementation roadmap. Features must be implemented, configured, secured, and tested before the system is considered production-ready.
-
 ---
 
-## 1. Project Overview
+##  Project Overview
 
-Imagine a company manager asks:
-
-> “Analyze why our revenue dropped this quarter, compare product performance, investigate the likely causes, forecast next quarter, and prepare an evidence-backed report. Send it to the finance team after approval.”
 
 The system can:
 
@@ -27,7 +22,7 @@ The system can:
 
 **Core design principle:** Gemini provides reasoning and generation capabilities, LangGraph controls the multi-agent workflow, and MCP provides standardized access to tools and data.
 
-## 2. Project Goals
+##  Project Goals
 
 - Coordinate specialized AI agents on complex business tasks.
 - Use MCP as a standardized interface to tools and data sources.
@@ -40,7 +35,7 @@ The system can:
 
 ---
 
-## 3. Advanced System Architecture
+##  Advanced System Architecture
 
 ```mermaid
 flowchart TD
@@ -106,7 +101,7 @@ flowchart TD
 
 ---
 
-## 4. Recommended Technology Stack
+##  Recommended Technology Stack
 
 | Layer | Technology | Purpose |
 |---|---|---|
@@ -145,7 +140,7 @@ Add Next.js and n8n as the product and workflow needs become clear. Kubernetes, 
 
 ---
 
-## 5. Multi-Agent Design
+##  Multi-Agent Design
 
 Use a **supervisor-and-specialists architecture**. The supervisor manages the workflow, while specialized agents handle focused jobs.
 
@@ -234,7 +229,7 @@ n8n can provide workflow automation and external integrations. Depending on the 
 
 ---
 
-## 7. Advanced Workflow
+##  Advanced Workflow
 
 ```mermaid
 flowchart TD
@@ -295,7 +290,7 @@ Avoid unrestricted agent loops. Set maximum iterations, execution deadlines, too
 
 ---
 
-## 8. Suggested GitHub Repository Structure
+##  Suggested GitHub Repository Structure
 
 ```text
 enterprise-gemini-multi-agent/
@@ -355,139 +350,7 @@ This is a logical starting structure. Initially, run the backend and a small num
 
 ---
 
-## 9. Advanced Development Roadmap
-
-### Phase 1 — Gemini foundation
-- Set up the Google Gen AI SDK.
-- Configure the model through environment variables.
-- Create the FastAPI application and Pydantic schemas.
-- Implement error handling and unit tests.
-
-**Deliverable:** A working Gemini-backed API with validated inputs and outputs.
-
-### Phase 2 — MCP infrastructure
-- Implement a custom data MCP server.
-- Expose safe, typed, read-only tools.
-- Add a document retrieval server.
-- Test tool discovery, permissions, argument validation, and failure handling.
-
-**Deliverable:** Agents can query approved data through MCP.
-
-### Phase 3 — LangGraph orchestration
-- Implement typed shared state.
-- Add planning, routing, parallel tasks, and checkpoints.
-- Add bounded retries and human approval interrupts.
-- Test recovery after workflow interruption.
-
-**Deliverable:** A complete workflow from request to reviewed report.
-
-### Phase 4 — Evidence and forecasting
-- Add document retrieval and source tracking.
-- Implement KPI calculations and anomaly analysis.
-- Add statistical forecasting and scenario analysis.
-- Verify outputs against known test data.
-
-**Deliverable:** Evidence-backed analysis and forecasts.
-
-### Phase 5 — Enterprise automation
-- Connect n8n and approved external integrations.
-- Add report delivery and notifications.
-- Implement approval records, idempotency, and audit logging.
-
-**Deliverable:** Reports can be delivered through controlled workflows.
-
-### Phase 6 — Evaluation and observability
-- Integrate LangSmith tracing.
-- Add OpenTelemetry metrics.
-- Create representative test questions and expected results.
-- Measure accuracy, tool-call success, latency, and cost.
-- Test error handling and security boundaries.
-
-**Deliverable:** Runs can be inspected and quality can be measured.
-
-### Phase 7 — Production product
-- Build the Next.js dashboard.
-- Add multi-user authentication, tenant isolation, run history, and approval screens.
-- Containerize with Docker and deploy to cloud infrastructure.
-- Configure secrets, monitoring, backups, and operational alerts.
-
-**Deliverable:** A deployable application with a documented setup process.
-
----
-
-## 10. Production Security Checklist
-
-Before using real company data, implement the following.
-
-### Authentication and authorization
-- Use OAuth/OIDC authentication and server-side RBAC.
-- Enforce tenant isolation across database queries, documents, and execution history.
-- Restrict agents to authorized tools and datasets.
-- Enforce authorization in the backend and MCP servers—not only in prompts.
-
-### MCP and tool security
-- Allowlist tools each agent can call.
-- Validate tool arguments and enforce timeouts.
-- Treat tool results and retrieved documents as untrusted input.
-- Protect against prompt injection from external documents and tool outputs.
-- Use read-only database credentials for analytics.
-- Require explicit approval for sensitive write actions.
-
-### Secrets and privacy
-- Store API keys in environment variables or a secrets manager.
-- Keep real `.env` files, credentials, and private data out of Git.
-- Redact secrets and sensitive information from logs.
-- Define data retention and deletion policies.
-
-### Reliability and auditability
-- Add bounded retries, timeouts, and idempotency.
-- Record user, run ID, agent, tool, timestamp, status, and approval history.
-- Avoid logging sensitive content unnecessarily.
-- Test accuracy, tool permissions, failure recovery, and security boundaries.
-
-LangSmith supports tracing and evaluation, but it does not replace application authentication, authorization, or security controls.
-
----
-
-## 11. How to Demonstrate the Project to Companies
-
-Build a reproducible demo around a sales dataset with known answers.
-
-The demo should show:
-
-1. A user submits a complex business question.
-2. The planner creates a task plan with dependencies.
-3. Analytics and research agents work independently where possible.
-4. MCP tool calls retrieve authorized data.
-5. The insight agent produces findings with evidence.
-6. The critic detects unsupported claims or calculation errors.
-7. The report agent generates the final report.
-8. The user approves or rejects an external action.
-9. The dashboard displays the report, execution graph, and trace.
-
-### Metrics to measure
-
-- Task completion rate
-- Factual accuracy against a test set
-- Calculation accuracy
-- Tool-call success rate
-- Reviewer pass rate
-- Median and 95th-percentile latency
-- Cost per run
-- Retry and failure rate
-- Human approval and rejection rates for gated actions
-
-Compare the multi-agent workflow with a single-agent baseline. This demonstrates whether the extra agents improve quality enough to justify additional latency and cost.
-
-### Resume description
-
-> Designed and developed an enterprise multi-agent intelligence platform using the Gemini API, LangGraph, and MCP, coordinating specialized analytics, research, forecasting, and validation agents with controlled tool execution, evidence-backed reporting, human approvals, and end-to-end observability.
-
-Only claim features and performance numbers that you have implemented and verified.
-
----
-
-## 12. Official Documentation
+##  Official Documentation
 
 - [Gemini API documentation](https://ai.google.dev/gemini-api/docs)
 - [Google Gen AI SDK for Python](https://googleapis.github.io/python-genai/)
@@ -514,3 +377,38 @@ Start with one complete use case:
 Then expand into advanced orchestration, human approvals, forecasting, enterprise authentication, and automation.
 
 The engineering achievement is not the number of agents. It is a reliable, secure, measurable system that produces useful business outcomes.
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+<a href="https://github.com/iitking">
+  <img src="https://github.com/iitking.png" width="110" height="110" style="border-radius:50%" alt="Nivesh Kumar Meena" />
+</a>
+
+### **Nivesh Kumar Meena**
+
+**AI Architect · MLOps Engineer** | B.Tech Electrical Engineering, **IIT Roorkee**
+
+*Building agentic AI systems, RAG pipelines and production-ready ML.*
+
+<a href="https://www.linkedin.com/in/nivesh-kumar-meena-a31465221/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://github.com/iitking"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="mailto:niveshkr149@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+
+<br/><br/>
+
+⭐ **If you found this project useful, please give it a star!** ⭐
+
+<sub>Open to AI/ML engineering opportunities and collaborations.</sub>
+
+</div>
+
+---
+
+<div align="center">
+  <sub>Made with ❤️ by <a href="https://github.com/iitking">Nivesh Kumar Meena</a> · © 2026 · MIT License</sub>
+</div>
+
